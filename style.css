@@ -1,0 +1,502 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	/* background-color: #f1f1f1; */
+	/* background-color: #cf8e8e; */
+	/* background-color: #fff; */
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 1em;
+	min-height: 100vh;
+
+	/* min-width: 650px; */
+	width: 95vw;
+	max-width: 1200px;
+
+	margin: auto;
+	overflow-x: hidden;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	/* margin-bottom: 40px; */
+	/* padding: 20px; */
+	/* width: 100%; */
+	/* background-color: #444855; */
+	padding-top: 1em;
+	padding-bottom: 1em;
+	width: 100%;
+	/* padding-left: 4em;
+	padding-right: 6em; */
+	/* min-width: 650px;
+	width: 80vw;
+	max-width: 1200px; */
+
+	/* padding: 20px;
+	text-align: center;
+	border-bottom: 1px solid #e1e1e1; */
+}
+iframe {
+	border-radius: 1em;
+	width: 100%;
+	height: 100%;
+}
+.video {
+	width: 60%;
+	height: auto;
+	aspect-ratio: 16 / 9;
+	/* height: 600px; */
+	/* width: 320px; */
+	/* max-width: 320px; */
+	/* min-height: 540px; */
+}
+
+main {
+	flex: 1 0 auto;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	/* justify-content: start; */
+	align-items: center;
+	width: 100%;
+	/* width: 100vw; */
+	/* min-width: 650px;
+	width: 80vw;
+	max-width: 1200px; */
+	gap: 2em;
+	padding-bottom: 0;
+	/* padding: 20px; */
+	/* background-color: blueviolet; */
+	/* display: flex;
+	flex-direction: column; */
+	/* justify-content: center; */
+	/* padding: 30px; */
+	/* padding-left: 30px;
+	padding-right: 30px; */
+	/* background-color: #f100f1; */
+	/* display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	min-width: 800px;
+	width: 80vw;
+	max-width: 1200px;
+	gap: 50px;
+	padding-bottom: 0; */
+	/* padding: 20px; */
+	/* background-color: cornsilk; */
+}
+
+footer {
+	/* padding-top: 5px; */
+	display: flex;
+	flex-direction: row;
+
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #444855;
+	justify-content: center;
+	/* align-items: center; */
+	gap: 3em;
+	/* min-height: 200px; */
+	width: 100vw;
+}
+
+.menu-list {
+	display: flex;
+	flex-direction: row;
+	list-style-type: none;
+	justify-content: space-between;
+	/* width: 100%; */
+	/* gap: 2em; */
+	/* width: fit-content; */
+	/* width: auto; */
+}
+
+.row {
+	display: flex;
+	flex-direction: row;
+}
+.column {
+	display: flex;
+	flex-direction: column;
+	/* gap: 10px; */
+	/* justify-content: space-evenly; */
+}
+.fill-width {
+	width: 100%;
+}
+.gap-10 {
+	gap: 10px;
+}
+.gap-20 {
+	gap: 20px;
+}
+.gap-40 {
+	gap: 40px;
+}
+.gap-160 {
+	gap: 160px;
+}
+.x {
+	background-color: #00eeff;
+}
+.y {
+	background-color: #7700ff;
+}
+hr.solid {
+	border-top: 3px solid #bbb;
+}
+
+#projects {
+	padding-top: 4em;
+	gap: 2em;
+	padding-bottom: 4em;
+}
+
+#contact {
+	width: 80%;
+}
+
+.project {
+	width: fit-content;
+	/* width: 80vw;
+	max-width: 1000px;
+	min-width: 800px; */
+	/* min-width: 300px; */
+	flex-wrap: nowrap;
+	/* min-height: 540px; */
+	padding-left: 60px;
+	padding-right: 60px;
+}
+.projectinfo {
+	flex-shrink: 0;
+	width: 60%;
+	/* background-color: #7700ff; */
+	/* width: 480px; */
+	/* max-width: 480px; */
+	/* min-height: 540px; */
+}
+
+.contactForm {
+	display: flex;
+	flex-direction: column;
+	/* justify-content: start; */
+	align-items: center;
+	width: 100%;
+	gap: 0.4em;
+	/* padding: 4em; */
+	/* border-radius: 4em; */
+	/* box-shadow: #ddd 0.1em 0.5em 1em 0em; */
+}
+
+label {
+	font-family: "Urbanist", sans-serif;
+	font-weight: 600;
+	font-size: 1em;
+	width: 100%;
+	padding-left: 1.5em;
+}
+input {
+	width: 96%;
+	height: 2em;
+	/* padding: 0.5em; */
+	border-radius: 2em;
+
+	font-family: "Jost", sans-serif;
+	font-size: 1em;
+	border-color: transparent;
+	/* background-color: hsl(0, 0%, 97%); */
+	background-color: #fff;
+	box-shadow: inset 0 -2px 0.2em #ccc;
+
+	padding: 0.5em;
+	padding-left: 1.5em;
+	margin: 0px;
+}
+textarea {
+	width: 95%;
+	height: 200px;
+	/* padding: 0.5em; */
+
+	font-family: "Jost", sans-serif;
+	font-size: 1em;
+	background-color: #fff;
+
+	border-radius: 2em;
+	border-color: transparent;
+	padding: 1.5em;
+	/* box-shadow: inset 0 0 0.5em #ccc; */
+	box-shadow: inset 0 -2px 0.4em #ccc;
+}
+
+.reverse {
+	flex-direction: row-reverse;
+}
+
+.center {
+	align-items: center;
+}
+.center-main {
+	justify-content: center;
+}
+
+#logo {
+	width: 280px;
+	flex-shrink: 0;
+}
+#opacity-demo {
+	opacity: 0.8;
+}
+
+#introduction {
+	display: flex;
+	flex-direction: row;
+
+	width: 80%;
+	/* width: fit-content; */
+	/* max-width: 1000px;
+	width: 70vw;
+	min-width: 700px; */
+	/* max-width: 1000px; */
+	background-color: #fff;
+	border-radius: 25px;
+	padding: 4em;
+	box-shadow: #ddd 0.1em 0.5em 1em 0em;
+	margin-bottom: 2em;
+}
+
+#project-example {
+	background-color: #fff;
+	padding: 4em;
+	border-radius: 4em;
+	/* opacity: 0.4; */
+	position: relative;
+	margin-bottom: 2em;
+
+	box-shadow: #ddd 0.1em 0.5em 1em 0em;
+
+	animation-name: reveal-animation;
+	animation-duration: 1s;
+	animation-timing-function: cubic-bezier(0, 0.6, 0.6, 1);
+
+	animation-fill-mode: forwards;
+}
+@keyframes reveal-animation {
+	from {
+		opacity: 0;
+		top: 4em;
+	}
+	to {
+		opacity: 1;
+		top: 0em;
+	}
+}
+
+/* Huvud titel */
+h1 {
+	color: #1c1d1d;
+	font-family: "Urbanist", sans-serif;
+	font-size: 4em;
+	font-weight: 900;
+	width: 80%;
+	line-height: 1em;
+}
+/* Article title */
+h2 {
+	font-family: "Urbanist", sans-serif;
+	font-size: 2em;
+	font-weight: 900;
+	color: #bbb;
+}
+/* Hej */
+h3 {
+	font-family: "Urbanist", sans-serif;
+	font-size: 2.625em;
+	font-weight: 400;
+	color: #15161a;
+}
+h4 {
+	color: #444855;
+	font-family: "Urbanist", sans-serif;
+	font-size: 2em;
+	font-weight: 600;
+	/* line-height: 0.5em; */
+	line-height: 0.5em;
+}
+footer p {
+	color: #dddddd;
+	font-family: "Urbanist", sans-serif;
+	font-size: 1.3em;
+	font-weight: 400;
+	/* letter-spacing: 0.05em; */
+	/* line-height: 0.5em; */
+}
+/* Namn */
+h5 {
+	/* text-transform: uppercase; */
+	/* text-align: center; */
+	color: #1c1d1d;
+	/* padding: 20px; */
+	font-family: "Urbanist", sans-serif;
+	font-size: 28px;
+	font-size: 1.9em;
+	font-weight: 700;
+	letter-spacing: -0.02em;
+	word-spacing: 0.1em;
+}
+/* Titel */
+h6 {
+	color: #1c1d1d;
+	font-family: "Urbanist", sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	letter-spacing: 0.02em;
+	word-spacing: -0.1em;
+}
+
+p {
+	/* font-family: "Roboto", sans-serif; */
+	color: #1c1d1d;
+	font-family: "Jost", sans-serif;
+	font-size: 1em;
+	font-weight: 400;
+	line-height: 1.6;
+	letter-spacing: 0.025em;
+	text-align: justify;
+	/* background-color: #09ff00; */
+	/* width: 100%; */
+
+	/* padding-top: 20px;
+	padding-bottom: 20px; */
+
+	/* font-optical-sizing: auto; */
+}
+
+button {
+	padding: 10px;
+	font-family: "Urbanist", sans-serif;
+	font-size: 1.125em;
+	font-weight: 500;
+	color: white;
+	background-color: black;
+	border-radius: 10em;
+	border: 0px;
+	text-wrap: nowrap;
+	width: min-content;
+	padding-left: 2em;
+	padding-right: 2em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	cursor: pointer;
+
+	/* text-align: center; */
+	/* transition: background-color 1s linear; */
+}
+
+a {
+	padding-left: 1em;
+	padding-right: 1em;
+	padding-top: 0.5em;
+	padding-bottom: 0.5em;
+	font-family: "Urbanist", sans-serif;
+	font-size: 16px;
+	font-weight: 500;
+	/* text-align: center; */
+	color: black;
+	border-radius: 100px;
+
+	/* background-color: #f0f0f0; */
+	/* width: min-content; */
+	/* transition: background-color 1s linear; */
+	background-color: #fff;
+	text-decoration: none;
+	transition: background-color 0.3s linear;
+}
+li a:hover {
+	background-color: #ffd43a;
+	transition: background-color 0.2s ease-in-out;
+	/* transition: border-radius 1s linear; */
+}
+
+li {
+	/* padding-left: 20px;
+	padding-right: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px; */
+	/* background-color: #f0f0f0; */
+	/* padding-bottom: 1em; */
+}
+.textured-background {
+	background-image: url("data:image/svg+xml,%3Csvg width='100' height='100' viewBox='0 0 200 600' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23e0e0e0' fill-opacity='0.4'%3E%3Cpath d='M0 0h50v50H0zm50 50h50v50H50z'/%3E%3C/g%3E%3C/svg%3E");
+	background-image: url("https://img.freepik.com/free-vector/geometric-background-vector-white-cube-patterns_53876-126683.jpg");
+	background-image: url("https://st3.depositphotos.com/4072575/14819/i/450/depositphotos_148190617-stock-photo-texture-of-white-handmade-paper.jpg");
+	/* background-image: url(""); */
+	background-image: url("https://st2.depositphotos.com/2873617/5711/v/450/depositphotos_57111711-stock-illustration-white-striped-texture-vector-seamless.jpg");
+}
+
+@media (max-width: 900px) {
+	header {
+		flex-direction: column;
+		gap: 0.5em;
+	}
+
+	.menu-list {
+		padding: 10px;
+		flex-direction: column;
+		/* list-style-type: none; */
+		align-items: center;
+		/* width: 100%; */
+		gap: 1em;
+		/* width: fit-content; */
+		/* width: auto; */
+	}
+	.project {
+		flex-direction: column-reverse;
+		gap: 1em;
+		margin-bottom: 8em;
+	}
+	.projectinfo {
+		width: 100%;
+	}
+
+	#introduction {
+		flex-direction: column;
+		gap: 1em;
+		flex-grow: initial;
+		width: 70%;
+		/* align-items: normal; */
+		/* display: flex;
+		flex-direction: row;
+		width: fit-content;
+		background-color: #fff;
+		border-radius: 25px;
+		padding: 4em;
+		box-shadow: #ddd 0.1em 0.5em 1em 0em;
+		margin-bottom: 2em; */
+	}
+	main {
+		width: 100%;
+	}
+	h1 {
+		width: 100%;
+	}
+	footer {
+		flex-direction: column;
+
+		/* align-items: center; */
+		padding-left: 8em;
+	}
+	#project-example {
+		width: 80%;
+	}
+}
