@@ -68,12 +68,12 @@ main {
 	/* justify-content: start; */
 	align-items: center;
 	width: 100%;
+	gap: 2em;
+	padding-bottom: 0;
 	/* width: 100vw; */
 	/* min-width: 650px;
 	width: 80vw;
 	max-width: 1200px; */
-	gap: 2em;
-	padding-bottom: 0;
 	/* padding: 20px; */
 	/* background-color: blueviolet; */
 	/* display: flex;
