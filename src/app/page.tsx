@@ -1,16 +1,14 @@
+import Project from "@/components/Project";
 import Image from "next/image";
-import { CiMail } from "react-icons/ci";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
-import { FaM } from "react-icons/fa6";
-import { IoMailOutline } from "react-icons/io5";
 import { LuMail } from "react-icons/lu";
 
 export default function Home() {
 	return (
 		// <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
 		<main className="flex flex-col w-full p-24 items-center justify-center gap-8 ">
-			<section className="flex flex-row max-w-screen-lg items-center gap-8  rounded-3xl  overflow-hidden p-4">
-				<img src="/images/portrait.png" alt="portrait" width="320" />
+			<section className="flex flex-row max-w-screen-lg items-center gap-8 rounded-3xl overflow-hidden p-8">
+				<img src="/images/portrait.png" alt="portrait" width="300" />
 				{/* <Image
 					src="/images/portrait.png"
 					alt="portrait"
@@ -62,6 +60,9 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+			<Project title="Gröna Mackan" url=" " />
+			<Project title="Jerry" />
 
 			{/* <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
 				<a
