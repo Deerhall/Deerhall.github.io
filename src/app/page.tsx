@@ -61,8 +61,20 @@ export default function Home() {
 				</div>
 			</section>
 
-			<Project title="Gröna Mackan" url=" " />
-			<Project title="Jerry" />
+			<Project
+				title="Skolplattform"
+				description="I samarbete med CGI och forskare vid Umeå Universitet skapades en
+							prototyp för en skolplattform som använder sig av en app samt
+							deltagande av lektion via VR. Prototyp för app skapades i Figma.
+							VR prototypen skapdes i Unity. Aliquam varius blandit lacus, vitae
+							porta risus venenatis non. Nam semper eget ipsum et vehicula. Duis
+							porta consequat nunc eu accumsan. Nullam aliquam tincidunt odio,
+							ac rutrum lacus. Phasellus dignissim lacus sit amet enim
+							vestibulum sollicitudin."
+				imgurl="/images/skolplattform.png"
+				url="Url"
+			/>
+			<Project title="Gröna Mackan" url="test" reversed={true} />
 
 			{/* <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
 				<a
