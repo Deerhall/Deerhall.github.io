@@ -71,7 +71,7 @@ export default function RootLayout({
 					<div className="flex flex-row justify-between list-none">
 						<a
 							href="/files/Selim_Hjorthall_CV_Sv.pdf"
-							className="flex items-center gap-1 bg-amber-300 transition ease-out hover:ring-2 ring-gray-500 dark:text-zinc-900  py-2 px-4 rounded-full "
+							className="flex items-center gap-1 font-semibold bg-amber-300 transition ease-out hover:ring-2 ring-gray-500 dark:text-zinc-900  py-2 px-4 rounded-full "
 						>
 							CV
 							{/* <GiScrollUnfurled /> */}

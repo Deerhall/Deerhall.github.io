@@ -7,7 +7,7 @@ export default function Home() {
 		<>
 			{/* // <main className="flex min-h-screen flex-col items-center justify-between p-24 "> */}
 			{/* // <main className="flex flex-col w-full p-24 items-center justify-center gap-8 "> */}
-			<section className="flex flex-row w-full items-center gap-8 rounded-3xl py-24 max-xl:flex-col max-xl:py-2 max-xl:px-4 max-xl:gap-2 max-xl:items-start">
+			<section className="flex flex-row w-full items-center gap-8 rounded-3xl py-24 max-xl:flex-col max-xl:py-8 max-xl:px-4 max-xl:gap-2 max-xl:items-start">
 				{/* <div className="flex w-96 max-xl:w-full items-end">
 					<img
 						src="/images/portrait.png"
@@ -29,14 +29,15 @@ export default function Home() {
 				</div>
 
 				<div className="flex flex-col gap-5 w-full">
-					<h1 className="text-2xl font-semibold opacity-40 text-amber-600 dark:text-amber-300 dark:opacity-80 leading-4 max-xl:text-xl max-xl:text-center">
+					{/* <h1 className="text-2xl font-semibold text-zinc-400 leading-4"> */}
+					<h1 className="text-2xl font-semibold opacity-50   dark:opacity-80 leading-4 max-xl:text-xl max-xl:text-center">
 						Hej, jag heter
 					</h1>
 					<h1 className="text-5xl font-black leading-10 max-xl:text-4xl max-xl:leading-4 max-xl:text-center">
 						Selim Hjorthall.
 					</h1>
 
-					<h1 className="text-5xl font-black opacity-40 leading-10 max-xl:text-2xl  max-xl:text-center">
+					<h1 className="text-5xl font-black opacity-70 leading-10 max-xl:text-xl  max-xl:text-center">
 						Utvecklare och UI/UX designer.
 					</h1>
 					<svg
@@ -81,6 +82,12 @@ export default function Home() {
 					</div>
 				</div>
 			</section>
+
+			<div className="flex w-fit items-center m-auto gap-4 px-4 mt-8">
+				<div className="w-24 bg-gray-500 h-1 rounded-full opacity-10"></div>
+				<h1 className="text-xl font-black opacity-70 ">Projekt</h1>
+				<div className="w-24 bg-gray-500 h-1 rounded-full opacity-10"></div>
+			</div>
 
 			<Project
 				title="Rentbuddy"
