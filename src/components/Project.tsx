@@ -70,7 +70,7 @@ export default function Project(props: {
 					</div>
 				) : null}
 
-				{props.readUrl || props.demoUrl ? (
+				{props.readUrl || props.demoUrl || props.githubUrl ? (
 					<div className="flex gap-4">
 						{props.readUrl ? (
 							// <p className="bg-red-300 w-fit rounded-lg px-4">{props.url}</p>
