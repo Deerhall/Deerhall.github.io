@@ -7,28 +7,43 @@ export default function Home() {
 		<>
 			{/* // <main className="flex min-h-screen flex-col items-center justify-between p-24 "> */}
 			{/* // <main className="flex flex-col w-full p-24 items-center justify-center gap-8 "> */}
-			<section className="flex flex-row w-full items-center gap-8 rounded-3xl py-24">
-				<img src="/images/portrait.png" alt="portrait" width="300" />
-				{/* <Image
-					src="/images/portrait.png"
-					alt="portrait"
-					fill
-					objectFit="contain"
-				/> */}
-				<div className="flex flex-col gap-5 w-full ">
-					<h1 className="text-2xl font-semibold text-zinc-400 leading-4">
+			<section className="flex flex-row w-full items-center gap-8 rounded-3xl py-24 max-xl:flex-col max-xl:py-2 max-xl:px-4 max-xl:gap-2 max-xl:items-start">
+				{/* <div className="flex w-96 max-xl:w-full items-end">
+					<img
+						src="/images/portrait.png"
+						alt="portrait"
+						// width="300"
+						className="max-w-72"
+					/>
+					<h1 className="text-2xl font-semibold opacity-40 text-amber-600 leading-4 xl:hidden text-nowrap">
 						Hej, jag heter
 					</h1>
-					<h1 className="text-5xl font-black text-zinc-900 leading-10 ">
+				</div> */}
+				<div className="flex w-96 max-xl:w-full justify-center">
+					<img
+						src="/images/portrait.png"
+						alt="portrait"
+						// width="300"
+						className="max-w-72 max-xl:max-w-36"
+					/>
+				</div>
+
+				<div className="flex flex-col gap-5 w-full">
+					<h1 className="text-2xl font-semibold opacity-40 text-amber-600 dark:text-amber-300 dark:opacity-80 leading-4 max-xl:text-xl max-xl:text-center">
+						Hej, jag heter
+					</h1>
+					<h1 className="text-5xl font-black leading-10 max-xl:text-4xl max-xl:leading-4 max-xl:text-center">
 						Selim Hjorthall.
 					</h1>
-					{/* <h1 className="text-5xl font-black text-zinc-900 max-w-96 ">
-						Utvecklare och UI/UX designer.
-					</h1> */}
-					<h1 className="text-5xl font-black text-zinc-600 leading-10">
+
+					<h1 className="text-5xl font-black opacity-40 leading-10 max-xl:text-2xl  max-xl:text-center">
 						Utvecklare och UI/UX designer.
 					</h1>
-					<svg width="auto" height="2">
+					<svg
+						// width="auto"
+						height="2"
+						className="max-xl:hidden"
+					>
 						<line
 							x1="0"
 							y1="1"
@@ -38,30 +53,30 @@ export default function Home() {
 							strokeWidth="2"
 						/>
 					</svg>
-					<p className="text-gray-700 font-sans">
+					<p className="opacity-80 font-sans">
 						Jag är en nyfiken, driven och passionerad utvecklare som ständigt
 						hungrar efter mer. Som civilingenjörsstudent inom interaktion och
 						design utforskar jag ständigt nya teknologier och idéer för att
 						vässa mina färdigheter. Med ett öga för detaljer och en obeveklig
-						strävan efter innovation skapar jag uppslukande digitala världar och
-						estetiskt tilltalande produkter.
+						strävan efter innovation skapar jag lättförstådda och estetiskt
+						tilltalande produkter.
 					</p>
 					<div className="flex flex-row gap-5 items-center">
 						<a href="https://github.com/Deerhall">
 							{/* <img src="/svg/github.svg" alt="github" width="28" /> */}
-							<FaGithub className="text-gray-700 h-8 w-auto" />
+							<FaGithub className="opacity-80 h-8 w-auto" />
 						</a>
 						<a href="https://www.instagram.com/hjorthall/">
 							{/* <img src="/svg/instagram.svg" alt="instagram" width="28" /> */}
-							<FaInstagram className="text-gray-700 h-8 w-auto" />
+							<FaInstagram className="opacity-80 h-8 w-auto" />
 						</a>
 						<a href="https://www.linkedin.com/in/hjorthall/">
 							{/* <img src="/svg/linkedin.svg" alt="linkedin" width="28" /> */}
-							<FaLinkedin className="text-gray-700 h-8 w-auto" />
+							<FaLinkedin className="opacity-80 h-8 w-auto" />
 						</a>
 						<a href="mailto:selimhjorthall@gmail.com">
 							{/* <img src="/svg/mail.svg" alt="mail" width="28" /> */}
-							<LuMail className="text-gray-700 h-8 w-auto" />
+							<LuMail className="opacity-80 h-8 w-auto" />
 						</a>
 					</div>
 				</div>
@@ -78,6 +93,7 @@ export default function Home() {
 				"
 				// Mina huvudsakliga ansvarsområden inkluderade frontend-utveckling,
 				// inklusive komponentutveckling, state management och UI/UX-design.
+				demoUrl="https://www.figma.com/proto/H5NwAClFE98wnwmL80XQZX/Rentbuddy?node-id=0-1&scaling=contain&content-scaling=fill-screen"
 				imgurl="/images/rentbuddy.png"
 				tags={["React", "React Native", "Firebase", "Auth", "React Navigation"]}
 				reversed={true}
@@ -122,6 +138,7 @@ export default function Home() {
 					"AI",
 					"Open API",
 				]}
+				demoUrl="a"
 				reversed={true}
 			/>
 
@@ -155,6 +172,9 @@ export default function Home() {
 				hållbar konsumtion och produktion.
 				"
 				imgurl="/images/recyclecycle.png"
+				demoUrl="https://www.figma.com/proto/mj9ZznHvUni9NIAAmBHHfX/Recycle-Cycle-Designs?node-id=98-818&scaling=contain&content-scaling=fill-screen"
+				readUrl="asd"
+				githubUrl="a"
 				tags={["Prototyp", "Figma", "Reasearch", "Användartester"]}
 				reversed={true}
 			/>
