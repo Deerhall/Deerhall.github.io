@@ -58,11 +58,11 @@ export default function Project(props: {
 				{props.tags ? (
 					<div className="flex flex-wrap gap-2">
 						{props.tags.map((tag) => (
-							<div className="opacity-50 bg-amber-300 rounded-full dark:opacity-100 dark:bg-zinc-600">
-								<p
-									key={tag}
-									className="px-3 py-1 text-nowrap text-sm font-medium font-mono dark:text-white"
-								>
+							<div
+								key={tag}
+								className="opacity-50 bg-amber-300 rounded-full dark:opacity-100 dark:bg-zinc-600"
+							>
+								<p className="px-3 py-1 text-nowrap text-sm font-medium font-mono dark:text-white">
 									{tag}
 								</p>
 							</div>
