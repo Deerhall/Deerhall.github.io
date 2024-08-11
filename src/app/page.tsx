@@ -1,13 +1,13 @@
 import Project from "@/components/Project";
-import Image from "next/image";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { LuMail } from "react-icons/lu";
 
 export default function Home() {
 	return (
-		// <main className="flex min-h-screen flex-col items-center justify-between p-24 ">
-		<main className="flex flex-col w-full p-24 items-center justify-center gap-8 ">
-			<section className="flex flex-row max-w-screen-lg items-center gap-8 rounded-3xl overflow-hidden p-8">
+		<>
+			{/* // <main className="flex min-h-screen flex-col items-center justify-between p-24 "> */}
+			{/* // <main className="flex flex-col w-full p-24 items-center justify-center gap-8 "> */}
+			<section className="flex flex-row w-full items-center gap-8 rounded-3xl py-24">
 				<img src="/images/portrait.png" alt="portrait" width="300" />
 				{/* <Image
 					src="/images/portrait.png"
@@ -16,10 +16,16 @@ export default function Home() {
 					objectFit="contain"
 				/> */}
 				<div className="flex flex-col gap-5 w-full ">
-					<h1 className="text-2xl font-semibold text-gray-700 leading-3">
-						Hej. Jag är Selim
+					<h1 className="text-2xl font-semibold text-zinc-400 leading-4">
+						Hej, jag heter
 					</h1>
-					<h1 className="text-5xl font-black text-zinc-900 ">
+					<h1 className="text-5xl font-black text-zinc-900 leading-10 ">
+						Selim Hjorthall.
+					</h1>
+					{/* <h1 className="text-5xl font-black text-zinc-900 max-w-96 ">
+						Utvecklare och UI/UX designer.
+					</h1> */}
+					<h1 className="text-5xl font-black text-zinc-600 leading-10">
 						Utvecklare och UI/UX designer.
 					</h1>
 					<svg width="auto" height="2">
@@ -72,9 +78,26 @@ export default function Home() {
 							ac rutrum lacus. Phasellus dignissim lacus sit amet enim
 							vestibulum sollicitudin."
 				imgurl="/images/skolplattform.png"
-				url="Url"
+				url="skolplattform"
+				reversed={false}
 			/>
-			<Project title="Gröna Mackan" url="test" reversed={true} />
+
+			<Project
+				title="Skolplattform"
+				description="I samarbete med CGI och forskare vid Umeå Universitet skapades en
+							prototyp för en skolplattform som använder sig av en app samt
+							deltagande av lektion via VR. Prototyp för app skapades i Figma.
+							VR prototypen skapdes i Unity. Aliquam varius blandit lacus, vitae
+							porta risus venenatis non. Nam semper eget ipsum et vehicula. Duis
+							porta consequat nunc eu accumsan. Nullam aliquam tincidunt odio,
+							ac rutrum lacus. Phasellus dignissim lacus sit amet enim
+							vestibulum sollicitudin."
+				imgurl="/images/skolplattform.png"
+				url="skolplattform"
+				reversed={true}
+			/>
+
+			<Project title="Gröna Mackan" url="test" reversed={false} />
 
 			{/* <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
 				<a
@@ -145,6 +168,7 @@ export default function Home() {
 					</p>
 				</a>
 			</div> */}
-		</main>
+			{/* // </main> */}
+		</>
 	);
 }

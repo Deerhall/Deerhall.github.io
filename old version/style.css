@@ -422,7 +422,7 @@ a {
 	text-decoration: none;
 	transition: background-color 0.3s linear;
 }
-li a:hover {
+ul a:hover {
 	background-color: #ffd43a;
 	transition: background-color 0.2s ease-in-out;
 	/* transition: border-radius 1s linear; */
