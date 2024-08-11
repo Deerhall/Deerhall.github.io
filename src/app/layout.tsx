@@ -17,7 +17,12 @@ export default function RootLayout({
 }>) {
 	return (
 		<html lang="en" className="flex w-full justify-center">
-			<body className={inter.className + " flex flex-col w-full max-w-6xl"}>
+			<body
+				className={
+					inter.className +
+					" flex flex-col w-full max-w-6xl min-h-screen justify-between"
+				}
+			>
 				<header className="flex flex-row w-full justify-between items-center py-4 ">
 					{/* <div id="logo" className="flex flex-row items-center gap-3"> */}
 					<Link href={`/`} className="flex flex-row items-center gap-3">
@@ -32,9 +37,9 @@ export default function RootLayout({
 						</div>
 					</Link>
 					{/* </div> */}
-					<div>
+					{/* <div>
 						<div className="flex items-center">
-							<p className="text-neutral-400 px-2">Min: </p>
+							<p className="text-neutral-400 px-2">Above:</p>
 							<p className="sm:bg-fuchsia-300 rounded-3xl p-1">SM</p>
 							<p className="md:bg-fuchsia-300 rounded-3xl p-1">MD</p>
 							<p className="lg:bg-fuchsia-300 rounded-3xl p-1">LG</p>
@@ -42,14 +47,14 @@ export default function RootLayout({
 							<p className="2xl:bg-fuchsia-300 rounded-3xl p-1">XXL</p>
 						</div>
 						<div className="flex items-center">
-							<p className="text-neutral-400 px-2">Max: </p>
+							<p className="text-neutral-400 px-2">Below:</p>
 							<p className="max-sm:bg-fuchsia-300 rounded-3xl p-1">SM</p>
 							<p className="max-md:bg-fuchsia-300 rounded-3xl p-1">MD</p>
 							<p className="max-lg:bg-fuchsia-300 rounded-3xl p-1">LG</p>
 							<p className="max-xl:bg-fuchsia-300 rounded-3xl p-1">XL</p>
 							<p className="max-2xl:bg-fuchsia-300 rounded-3xl p-1">XXL</p>
 						</div>
-					</div>
+					</div> */}
 					<div className="flex flex-row justify-between list-none">
 						<a
 							href="/files/Selim_Hjorthall_CV_Sv.pdf"
@@ -62,6 +67,24 @@ export default function RootLayout({
 				<main className="flex flex-col  items-center justify-center gap-8">
 					{children}
 				</main>
+				<footer className="flex py-12 bg-gray-700 justify-around w-fill rounded-3xl text-white mb-8 mt-40">
+					<div className="flex gap-3 items-center">
+						<img src="/svg/footer-linkedin.svg" alt="linkedin" width="32" />
+						<p>Selim Hjorthall</p>
+					</div>
+					<div className="flex gap-3 items-center">
+						<img src="/svg/footer-mail.svg" alt="email" width="32" />
+						<p>selimhjorthall@gmail.com</p>
+					</div>
+					<div className="flex gap-3 items-center">
+						<img src="/svg/footer-phone.svg" alt="phone number" width="32" />
+						<p>070 - 68 302 68</p>
+					</div>
+					<div className="flex gap-3 items-center">
+						<img src="/svg/footer-instagram.svg" alt="instagram" width="32" />
+						<p>hjorthall</p>
+					</div>
+				</footer>
 			</body>
 		</html>
 	);
