@@ -84,7 +84,7 @@ export default function RootLayout({
 				<main className="flex flex-col  items-center justify-center gap-8">
 					{children}
 				</main>
-				<footer className="flex max-xl:flex-col max-xl:px-8 max-xl:py-8 gap-4 py-12 bg-gray-700 justify-around w-fill rounded-3xl text-white mb-8 mt-40 mx-4">
+				<footer className="flex max-xl:flex-col max-xl:px-8 py-8 gap-4 bg-gray-700 justify-around w-fill rounded-3xl text-white mb-8 mt-40 mx-4">
 					<a
 						href="https://www.linkedin.com/in/hjorthall/"
 						className="flex gap-2 items-center"
