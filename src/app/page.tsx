@@ -125,6 +125,8 @@ export default function Home() {
 					"Research",
 					"Användartester",
 				]}
+				githubUrl="https://github.com/Deerhall/DBT-SchoolPlatform-UnityVR-Prototype"
+				demoUrl="https://www.figma.com/proto/3B8jLtZTegGHYKX9YJr5i1/Plattform-Skola?node-id=1332-3924&scaling=contain&content-scaling=fill-screen&starting-point-node-id=1332%3A5168"
 				reversed={false}
 			/>
 
@@ -145,7 +147,6 @@ export default function Home() {
 					"AI",
 					"Open API",
 				]}
-				demoUrl="a"
 				reversed={true}
 			/>
 
@@ -180,8 +181,8 @@ export default function Home() {
 				"
 				imgurl="/images/recyclecycle.png"
 				demoUrl="https://www.figma.com/proto/mj9ZznHvUni9NIAAmBHHfX/Recycle-Cycle-Designs?node-id=98-818&scaling=contain&content-scaling=fill-screen"
-				readUrl="asd"
-				githubUrl="a"
+				// readUrl="asd"
+				// githubUrl="a"
 				tags={["Prototyp", "Figma", "Reasearch", "Användartester"]}
 				reversed={true}
 			/>
