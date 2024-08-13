@@ -31,14 +31,14 @@ export default function Project(props: {
 					"flex h-full w-2/5 max-xl:w-full max-xl:justify-center items-center " +
 					(props.reversed ? "justify-end" : "justify-start")
 				}
-				style={{ maxHeight: "500px" }}
+				// style={{ maxHeight: "500px" }}
 			>
 				{props.imgurl ? (
 					<img
 						src={props.imgurl}
 						alt="project image"
 						// height="400"
-						className="max-w-full max-h-full"
+						className="max-w-full max-h-96"
 					/>
 				) : null}
 				{props.videourl ? (
@@ -47,8 +47,8 @@ export default function Project(props: {
 						title="YouTube video player"
 						allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 						allowFullScreen={true}
-						className="h-fit w-full rounded-2xl"
-						style={{ aspectRatio: "16/9" }}
+						className="w-full rounded-2xl aspect-video"
+						// style={{ aspectRatio: "16/9" }}
 					/>
 				) : null}
 			</div>
@@ -58,7 +58,7 @@ export default function Project(props: {
 				) : null}
 
 				{props.description ? (
-					<p className="font-sans opacity-80">{props.description}</p>
+					<p className="font-sans opacity-80 text-lg">{props.description}</p>
 				) : null}
 
 				{props.tags ? (

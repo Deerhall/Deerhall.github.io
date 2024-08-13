@@ -44,7 +44,7 @@ export default function Home() {
 								strokeWidth="2"
 							/>
 						</svg>
-						<p className="opacity-80 font-sans">
+						<p className="opacity-80 font-sans text-lg">
 							Jag är en nyfiken, driven och passionerad utvecklare som ständigt
 							hungrar efter mer. Som civilingenjörsstudent inom interaktion och
 							design utforskar jag ständigt nya teknologier och idéer för att
@@ -203,6 +203,30 @@ export default function Home() {
 				videourl="https://www.youtube.com/embed/8a6LKIefUjs?si=_wg3nX0vxdOuz-mn"
 				tags={["Unreal Engine", "UI", "Ljud", "Musik", "Spelvärld"]}
 				reversed={true}
+			/>
+
+			<Project
+				title="NESP (New Era of Sport Psychology)"
+				description="
+				Ansvarig för att skapa, designa och utveckla den mobila plattformen NESP. 
+				Projektet involverade alla faser från tidig prototyp till färdig produkt, 
+				inklusive design, användartestning, utveckling och lansering.
+				Med ett litet men tight team, jobbar vi för att skapa en plattform som kan 
+				stödja ambitiösa idrottare med att hantera sina mentala utmaningar på ett 
+				praktiskt och engagerande sätt.
+				"
+				demoUrl="http://nesp.io/"
+				imgurl="/images/home/nesp.png"
+				tags={[
+					"Flutter",
+					"Dart",
+					"Firebase",
+					"Prototyp",
+					"Design",
+					"UX/UI",
+					"Användartester",
+				]}
+				reversed={false}
 			/>
 
 			{/* <div className="mb-32 grid text-center lg:mb-0 lg:w-full lg:max-w-5xl lg:grid-cols-4 lg:text-left">
