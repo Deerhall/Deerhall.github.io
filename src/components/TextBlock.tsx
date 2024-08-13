@@ -37,7 +37,7 @@ export default function TextBlock(props: {
 			animate="show"
 			// viewport={{ once: true, amount: 0.5 }}
 			transition={{
-				duration: 0.1,
+				duration: 0.3,
 				ease: "easeOut",
 				// when: "beforeChildren",
 				staggerChildren: 0.3,
