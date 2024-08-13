@@ -82,7 +82,7 @@ export default function Project(props: {
 							<MotionDiv whileHover={{ scale: 1.1 }}>
 								<Link href={`/projekt/${props.readUrl}`}>
 									<button className="bg-amber-300 dark:text-zinc-900 items-center justify-center px-16 h-12 rounded-xl cursor-pointer font-medium text-lg transition ease-out hover:ring-2 ring-gray-500 dark:ring-gray-50">
-										<p className="opacity-80">Read</p>
+										<p className="opacity-80">Läs mer</p>
 									</button>
 								</Link>
 							</MotionDiv>
