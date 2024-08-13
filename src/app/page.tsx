@@ -1,3 +1,4 @@
+import { MotionDiv } from "@/components/MotionDiv";
 import Project from "@/components/Project";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { LuMail } from "react-icons/lu";
@@ -7,7 +8,12 @@ export default function Home() {
 		<>
 			{/* // <main className="flex min-h-screen flex-col items-center justify-between p-24 "> */}
 			{/* // <main className="flex flex-col w-full p-24 items-center justify-center gap-8 "> */}
-			<section className="flex flex-row w-full items-center gap-8 rounded-3xl py-24 max-xl:flex-col max-xl:py-8 max-xl:px-4 max-xl:gap-2 max-xl:items-start">
+			<div
+				className="flex flex-row w-full items-center gap-8 rounded-3xl py-24 max-xl:flex-col max-xl:py-8 max-xl:px-4 max-xl:gap-2 max-xl:items-start"
+				// initial={{ scale: 0.8 }}
+				// animate={{ opacity: 1, scale: 1 }}
+				// transition={{ duration: 0.8, ease: "easeOut" }}
+			>
 				{/* <div className="flex w-96 max-xl:w-full items-end">
 					<img
 						src="/images/portrait.png"
@@ -81,7 +87,7 @@ export default function Home() {
 						</a>
 					</div>
 				</div>
-			</section>
+			</div>
 
 			<div className="flex w-fit items-center m-auto gap-4 px-4 mt-8">
 				<div className="w-24 bg-gray-500 h-1 rounded-full opacity-10"></div>

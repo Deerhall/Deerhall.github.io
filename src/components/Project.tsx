@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
-import { FaAngleLeft, FaAngleRight, FaGithub, FaPlay } from "react-icons/fa";
+import { FaGithub, FaPlay } from "react-icons/fa";
+import { MotionDiv } from "./MotionDiv";
 
 export default function Project(props: {
 	title: string;
@@ -14,11 +15,16 @@ export default function Project(props: {
 	reversed?: boolean;
 }) {
 	return (
-		<div
+		<MotionDiv
 			className={
 				"flex max-xl:flex-col max-xl:gap-4 gap-10 w-full items-center justify-between py-20 " +
 				(props.reversed ? "flex-row-reverse" : "flex-row")
 			}
+			layout
+			initial={{ opacity: 0, y: 100 }}
+			whileInView={{ opacity: 1, y: 0 }}
+			viewport={{ once: true, amount: 0.1 }}
+			transition={{ duration: 0.8, ease: "easeOut" }}
 		>
 			<div
 				className={
@@ -101,6 +107,6 @@ export default function Project(props: {
 					</div>
 				) : null}
 			</div>
-		</div>
+		</MotionDiv>
 	);
 }
