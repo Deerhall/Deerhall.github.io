@@ -90,6 +90,7 @@ export default function Project(props: {
 						{props.demoUrl ? (
 							<a
 								href={props.demoUrl}
+								target="_blank" // Open in new tab
 								className="flex items-center justify-center bg-amber-300 dark:text-zinc-900 h-12 w-12 pl-1 rounded-full cursor-pointer font-medium text-lg transition ease-out hover:ring-2 ring-gray-500 dark:ring-gray-50"
 							>
 								<FaPlay className="h-6 opacity-80 " />
@@ -99,6 +100,7 @@ export default function Project(props: {
 						{props.githubUrl ? (
 							<a
 								href={props.githubUrl}
+								target="_blank"
 								className="flex items-center justify-center bg-amber-300 dark:text-zinc-900  h-12 w-12 rounded-full  cursor-pointer font-medium text-lg transition ease-out hover:ring-2 ring-gray-500 dark:ring-gray-50"
 							>
 								<FaGithub className="h-6 w-6 opacity-80 " />
