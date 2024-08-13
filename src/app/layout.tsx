@@ -25,11 +25,10 @@ export default function RootLayout({
 			<body
 				className={
 					inter.className +
-					" flex flex-col w-full max-w-6xl min-h-screen justify-between"
+					" flex flex-col w-full max-w-6xl min-h-screen justify-between max-xl:px-4"
 				}
 			>
-				<header className="flex flex-wrap flex-row w-full justify-between items-center py-4 px-2  gap-2">
-					{/* <div id="logo" className="flex flex-row items-center gap-3"> */}
+				<header className="flex flex-wrap flex-row w-full justify-between items-center py-4 gap-2">
 					<Link href={`/`} className="flex flex-row items-center gap-3">
 						<img
 							src="/svg/ux-happy.svg"
@@ -71,20 +70,20 @@ export default function RootLayout({
 					<div className="flex flex-row justify-between list-none">
 						<a
 							href="/files/Selim_Hjorthall_CV_Sv.pdf"
-							className="flex items-center gap-1 font-semibold bg-amber-300 transition ease-out hover:ring-2 ring-gray-500 dark:text-zinc-900  py-2 px-4 rounded-full "
+							className="flex items-center gap-1 font-semibold bg-amber-300 transition ease-out hover:ring-2 ring-gray-500 dark:ring-gray-50 dark:text-zinc-900  py-2 px-4 rounded-full "
 						>
-							CV
+							<p className="opacity-80">CV</p>
 							{/* <GiScrollUnfurled /> */}
 							{/* <FaScroll /> */}
 							{/* <IoDocumentOutline /> */}
-							<IoDocument />
+							<IoDocument className="opacity-80" />
 						</a>
 					</div>
 				</header>
-				<main className="flex flex-col  items-center justify-center gap-8">
+				<main className="flex flex-col items-center justify-center gap-8">
 					{children}
 				</main>
-				<footer className="flex max-xl:flex-col max-xl:px-8 py-8 gap-4 bg-gray-700 justify-around w-fill rounded-3xl text-white mb-8 mt-40 mx-4">
+				<footer className="flex max-xl:flex-col max-xl:px-8 py-8 gap-4 bg-gray-700 justify-around w-fill rounded-3xl text-white mb-8 mt-20 ">
 					<a
 						href="https://www.linkedin.com/in/hjorthall/"
 						className="flex gap-2 items-center"
