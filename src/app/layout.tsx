@@ -25,7 +25,7 @@ export default function RootLayout({
 			<body
 				className={
 					inter.className +
-					" flex flex-col w-full max-w-6xl min-h-screen justify-between"
+					" flex flex-col w-full max-w-6xl min-h-screen justify-between "
 				}
 			>
 				<header className="flex flex-wrap flex-row w-full justify-between items-center py-4 px-2  gap-2">

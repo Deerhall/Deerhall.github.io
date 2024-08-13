@@ -36,14 +36,14 @@ export default function Home() {
 
 				<div className="flex flex-col gap-5 w-full">
 					{/* <h1 className="text-2xl font-semibold text-zinc-400 leading-4"> */}
-					<h1 className="text-2xl font-semibold opacity-50   dark:opacity-80 leading-4 max-xl:text-xl max-xl:text-center">
+					<h1 className="text-2xl font-semibold opacity-50   dark:opacity-80 leading-4 max-xl:text-xl max-xl:leading-3 max-xl:pt-4 max-xl:text-center">
 						Hej, jag heter
 					</h1>
-					<h1 className="text-5xl font-black leading-10 max-xl:text-4xl max-xl:leading-4 max-xl:text-center">
+					<h1 className="text-5xl font-black leading-10 max-xl:text-4xl max-xl:leading-8 max-xl:text-center">
 						Selim Hjorthall.
 					</h1>
 
-					<h1 className="text-5xl font-black opacity-70 leading-10 max-xl:text-xl  max-xl:text-center">
+					<h1 className="text-5xl font-black opacity-70 leading-10 max-xl:text-xl max-xl:leading-4  max-xl:text-center">
 						Utvecklare och UI/UX designer.
 					</h1>
 					<svg
@@ -121,7 +121,7 @@ export default function Home() {
 				Prototypen för appen skapades i Figma och VR prototypen skapdes i Unity.
 				"
 				imgurl="/images/skolplattform-vr.png"
-				// url="skolplattform"
+				readUrl="skolplattform"
 				tags={[
 					"Prototyp",
 					"Figma",

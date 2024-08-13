@@ -79,32 +79,37 @@ export default function Project(props: {
 				{props.readUrl || props.demoUrl || props.githubUrl ? (
 					<div className="flex gap-4">
 						{props.readUrl ? (
-							// <p className="bg-red-300 w-fit rounded-lg px-4">{props.url}</p>
-							<Link href={`/projekt/${props.readUrl}`}>
-								<button className="bg-amber-300 dark:text-zinc-900 items-center justify-center px-16 h-12 rounded-xl cursor-pointer font-medium text-lg transition ease-out hover:ring-2 ring-gray-500 dark:ring-gray-50">
-									<p className="opacity-80">Read</p>
-								</button>
-							</Link>
+							<MotionDiv whileHover={{ scale: 1.1 }}>
+								<Link href={`/projekt/${props.readUrl}`}>
+									<button className="bg-amber-300 dark:text-zinc-900 items-center justify-center px-16 h-12 rounded-xl cursor-pointer font-medium text-lg transition ease-out hover:ring-2 ring-gray-500 dark:ring-gray-50">
+										<p className="opacity-80">Read</p>
+									</button>
+								</Link>
+							</MotionDiv>
 						) : null}
 
 						{props.demoUrl ? (
-							<a
-								href={props.demoUrl}
-								target="_blank" // Open in new tab
-								className="flex items-center justify-center bg-amber-300 dark:text-zinc-900 h-12 w-12 pl-1 rounded-full cursor-pointer font-medium text-lg transition ease-out hover:ring-2 ring-gray-500 dark:ring-gray-50"
-							>
-								<FaPlay className="h-6 opacity-80 " />
-							</a>
+							<MotionDiv whileHover={{ scale: 1.2 }}>
+								<a
+									href={props.demoUrl}
+									target="_blank" // Open in new tab
+									className="flex items-center justify-center bg-amber-300 dark:text-zinc-900 h-12 w-12 pl-1 rounded-full cursor-pointer font-medium text-lg transition ease-out hover:ring-2 ring-gray-500 dark:ring-gray-50"
+								>
+									<FaPlay className="h-6 opacity-80 " />
+								</a>
+							</MotionDiv>
 						) : null}
 
 						{props.githubUrl ? (
-							<a
-								href={props.githubUrl}
-								target="_blank"
-								className="flex items-center justify-center bg-amber-300 dark:text-zinc-900  h-12 w-12 rounded-full  cursor-pointer font-medium text-lg transition ease-out hover:ring-2 ring-gray-500 dark:ring-gray-50"
-							>
-								<FaGithub className="h-6 w-6 opacity-80 " />
-							</a>
+							<MotionDiv whileHover={{ scale: 1.2 }}>
+								<a
+									href={props.githubUrl}
+									target="_blank"
+									className="flex items-center justify-center bg-amber-300 dark:text-zinc-900  h-12 w-12 rounded-full  cursor-pointer font-medium text-lg transition ease-out hover:ring-2 ring-gray-500 dark:ring-gray-50"
+								>
+									<FaGithub className="h-6 w-6 opacity-80 " />
+								</a>
+							</MotionDiv>
 						) : null}
 					</div>
 				) : null}
