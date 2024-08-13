@@ -17,18 +17,18 @@ export default function Project(props: {
 	return (
 		<MotionDiv
 			className={
-				"flex max-xl:flex-col max-xl:gap-4 gap-10 w-full items-center justify-between py-20 " +
+				"flex max-xl:flex-col max-xl:gap-4 gap-10 w-full items-center justify-between pb-40 " +
 				(props.reversed ? "flex-row-reverse" : "flex-row")
 			}
 			layout
 			initial={{ opacity: 0, y: 100 }}
 			whileInView={{ opacity: 1, y: 0 }}
-			viewport={{ once: true, amount: 0.1 }}
+			viewport={{ once: true, amount: 0.0 }}
 			transition={{ duration: 0.8, ease: "easeOut" }}
 		>
 			<div
 				className={
-					"flex h-full w-2/5 max-xl:w-full max-xl:px-4 max-xl:justify-center items-center " +
+					"flex h-full w-2/5 max-xl:w-full max-xl:justify-center items-center " +
 					(props.reversed ? "justify-end" : "justify-start")
 				}
 				style={{ maxHeight: "500px" }}
@@ -52,7 +52,7 @@ export default function Project(props: {
 					/>
 				) : null}
 			</div>
-			<div className="flex flex-col w-3/5 max-xl:w-full max-xl:px-4 gap-6 items-start">
+			<div className="flex flex-col w-3/5 max-xl:w-full gap-6 items-start">
 				{props.title ? (
 					<h3 className="text-4xl  font-bold font-sans ">{props.title}</h3>
 				) : null}
@@ -77,7 +77,7 @@ export default function Project(props: {
 				) : null}
 
 				{props.readUrl || props.demoUrl || props.githubUrl ? (
-					<div className="flex gap-4">
+					<div className="flex gap-4 ">
 						{props.readUrl ? (
 							<MotionDiv whileHover={{ scale: 1.1 }}>
 								<Link href={`/projekt/${props.readUrl}`}>

@@ -1,113 +1,100 @@
 import { MotionDiv } from "@/components/MotionDiv";
 import Project from "@/components/Project";
+import { BsChevronCompactDown, BsChevronDown } from "react-icons/bs";
 import { FaGithub, FaInstagram, FaLinkedin } from "react-icons/fa";
 import { LuMail } from "react-icons/lu";
 
 export default function Home() {
 	return (
 		<>
-			{/* // <main className="flex min-h-screen flex-col items-center justify-between p-24 "> */}
-			{/* // <main className="flex flex-col w-full p-24 items-center justify-center gap-8 "> */}
-			<div
-				className="flex flex-row w-full items-center gap-8 rounded-3xl py-24 max-xl:flex-col max-xl:py-8 max-xl:px-4 max-xl:gap-2 max-xl:items-start"
-				// initial={{ scale: 0.8 }}
-				// animate={{ opacity: 1, scale: 1 }}
-				// transition={{ duration: 0.8, ease: "easeOut" }}
-			>
-				{/* <div className="flex w-96 max-xl:w-full items-end">
-					<img
-						src="/images/portrait.png"
-						alt="portrait"
-						// width="300"
-						className="max-w-72"
-					/>
-					<h1 className="text-2xl font-semibold opacity-40 text-amber-600 leading-4 xl:hidden text-nowrap">
-						Hej, jag heter
-					</h1>
-				</div> */}
-				<div className="flex w-96 max-xl:w-full justify-center">
-					<img
-						src="/images/portrait.png"
-						alt="portrait"
-						// width="300"
-						className="max-w-72 max-xl:max-w-36"
-					/>
-				</div>
-
-				<div className="flex flex-col gap-5 w-full">
-					{/* <h1 className="text-2xl font-semibold text-zinc-400 leading-4"> */}
-					<h1 className="text-2xl font-semibold opacity-50   dark:opacity-80 leading-4 max-xl:text-xl max-xl:leading-3 max-xl:pt-4 max-xl:text-center">
-						Hej, jag heter
-					</h1>
-					<h1 className="text-5xl font-black leading-10 max-xl:text-4xl max-xl:leading-8 max-xl:text-center">
-						Selim Hjorthall.
-					</h1>
-
-					<h1 className="text-5xl font-black opacity-70 leading-10 max-xl:text-xl max-xl:leading-4  max-xl:text-center">
-						Utvecklare och UI/UX designer.
-					</h1>
-					<svg
-						// width="auto"
-						height="2"
-						className="max-xl:hidden"
-					>
-						<line
-							x1="0"
-							y1="1"
-							x2="100"
-							y2="1"
-							stroke="#D2D2D2"
-							strokeWidth="2"
+			<section className="flex flex-col w-full h-screen max-xl:h-fit items-center">
+				<div className=" flex flex-row h-3/4 max-xl:h-fit items-center gap-8 rounded-3xl mb-20 max-xl:flex-col  max-xl:gap-2 max-xl:items-start">
+					<div className="flex w-96 max-xl:w-full justify-center ">
+						<img
+							src="/images/home/portrait.png"
+							alt="portrait"
+							// width="300"
+							className="max-w-72 max-xl:max-w-36"
 						/>
-					</svg>
-					<p className="opacity-80 font-sans">
-						Jag är en nyfiken, driven och passionerad utvecklare som ständigt
-						hungrar efter mer. Som civilingenjörsstudent inom interaktion och
-						design utforskar jag ständigt nya teknologier och idéer för att
-						vässa mina färdigheter. Med ett öga för detaljer och en obeveklig
-						strävan efter innovation skapar jag lättförstådda och estetiskt
-						tilltalande produkter.
-					</p>
-					<div className="flex flex-row gap-5 items-center">
-						<a href="https://github.com/Deerhall">
-							{/* <img src="/svg/github.svg" alt="github" width="28" /> */}
-							<FaGithub className="opacity-80 h-8 w-auto" />
-						</a>
-						<a href="https://www.instagram.com/hjorthall/">
-							{/* <img src="/svg/instagram.svg" alt="instagram" width="28" /> */}
-							<FaInstagram className="opacity-80 h-8 w-auto" />
-						</a>
-						<a href="https://www.linkedin.com/in/hjorthall/">
-							{/* <img src="/svg/linkedin.svg" alt="linkedin" width="28" /> */}
-							<FaLinkedin className="opacity-80 h-8 w-auto" />
-						</a>
-						<a href="mailto:selimhjorthall@gmail.com">
-							{/* <img src="/svg/mail.svg" alt="mail" width="28" /> */}
-							<LuMail className="opacity-80 h-8 w-auto" />
-						</a>
+					</div>
+
+					<div className="flex flex-col gap-5 w-full">
+						{/* <h1 className="text-2xl font-semibold text-zinc-400 leading-4"> */}
+						<h1 className="text-2xl font-semibold opacity-50   dark:opacity-80 leading-4 max-xl:text-xl max-xl:leading-3 max-xl:pt-4 max-xl:text-center">
+							Hej, jag heter
+						</h1>
+						<h1 className="text-5xl font-black leading-10 max-xl:text-4xl max-xl:leading-8 max-xl:text-center">
+							Selim Hjorthall.
+						</h1>
+
+						<h1 className="text-5xl font-black opacity-70 leading-10 max-xl:text-xl max-xl:leading-4  max-xl:text-center">
+							Utvecklare och UI/UX designer.
+						</h1>
+						<svg
+							// width="auto"
+							height="2"
+							className="max-xl:hidden"
+						>
+							<line
+								x1="0"
+								y1="1"
+								x2="100"
+								y2="1"
+								stroke="#D2D2D2"
+								strokeWidth="2"
+							/>
+						</svg>
+						<p className="opacity-80 font-sans">
+							Jag är en nyfiken, driven och passionerad utvecklare som ständigt
+							hungrar efter mer. Som civilingenjörsstudent inom interaktion och
+							design utforskar jag ständigt nya teknologier och idéer för att
+							vässa mina färdigheter. Med ett öga för detaljer och en obeveklig
+							strävan efter innovation skapar jag lättförstådda och estetiskt
+							tilltalande produkter.
+						</p>
+						<div className="flex flex-row gap-5 items-center max-xl:justify-center">
+							<a href="https://github.com/Deerhall">
+								{/* <img src="/svg/github.svg" alt="github" width="28" /> */}
+								<FaGithub className="opacity-80 h-8 w-auto" />
+							</a>
+							<a href="https://www.instagram.com/hjorthall/">
+								{/* <img src="/svg/instagram.svg" alt="instagram" width="28" /> */}
+								<FaInstagram className="opacity-80 h-8 w-auto" />
+							</a>
+							<a href="https://www.linkedin.com/in/hjorthall/">
+								{/* <img src="/svg/linkedin.svg" alt="linkedin" width="28" /> */}
+								<FaLinkedin className="opacity-80 h-8 w-auto" />
+							</a>
+							<a href="mailto:selimhjorthall@gmail.com">
+								{/* <img src="/svg/mail.svg" alt="mail" width="28" /> */}
+								<LuMail className="opacity-80 h-8 w-auto" />
+							</a>
+						</div>
 					</div>
 				</div>
-			</div>
+				<BsChevronDown className="max-xl:hidden w-20 h-20 animate-pulse" />
+			</section>
 
-			<div className="flex w-fit items-center m-auto gap-4 px-4 mt-8">
+			{/* <div className="flex w-fit items-center m-auto gap-4 px-4 mt-8">
 				<div className="w-24 bg-gray-500 h-1 rounded-full opacity-10"></div>
 				<h1 className="text-xl font-black opacity-70 ">Projekt</h1>
 				<div className="w-24 bg-gray-500 h-1 rounded-full opacity-10"></div>
-			</div>
+			</div> */}
 
 			<Project
 				title="Rentbuddy"
 				description="
-				I samarbete med ett universitetsteam i Australien utvecklade jag tillsammans med 
-				två andra studenter, en mobilapplikation utvecklad för att effektivisera processen 
-				för uthyrning och delning av bostäder. Ett universitetsteam från Australien 
-				hade ansvaret att förundersöka och identifiera användarnas behov, där vi fick ta över facklan och 
-				utveckla en omfattande lösning. Problemet grundade sig i Australiens bostadskris.
+				I samarbete med ett universitetsteam i Australien utvecklade jag, tillsammans med 
+				två andra studenter, en mobilapplikation för att effektivisera processen 
+				för uthyrning och delning av bostäder. Problemställningen grundade sig i Australiens bostadskris.
+				Australiens universitetsteam var ansvariga för research och identifiering av användarnas behov 
+				och vårt team var ansvariga för utvecklingen av en app som löser identifierade behov. 
+				Appen byggdes i React Native och använde Firebase som SaaS backend.
 				"
 				// Mina huvudsakliga ansvarsområden inkluderade frontend-utveckling,
 				// inklusive komponentutveckling, state management och UI/UX-design.
 				demoUrl="https://www.figma.com/proto/H5NwAClFE98wnwmL80XQZX/Rentbuddy?node-id=0-1&scaling=contain&content-scaling=fill-screen"
-				imgurl="/images/rentbuddy.png"
+				imgurl="/images/home/rentbuddy.png"
 				tags={["React", "React Native", "Firebase", "Auth", "React Navigation"]}
 				reversed={true}
 			/>
@@ -116,11 +103,12 @@ export default function Home() {
 				title="Skolplattform"
 				description="
 				I samarbete med CGI och forskare vid Umeå Universitet, skapades en
-				prototyp av en modern skolplattform som använder sig av en app samt
-				deltagande av lektioner via VR. Fokuset låg på att minska skolfrånvaron bland ungdomar.
-				Prototypen för appen skapades i Figma och VR prototypen skapdes i Unity.
+				prototyp av en modern skolplattform som använder sig av en app samt ett VR gränssnitt som
+				tillåter deltagande i skolan. Målet med projektet var att ta fram en lösning för att hjälpa
+				ungdomar med hög skolfrånvaro. Prototypen för appen skapades i Figma och VR prototypen
+				byggdes i Unity för HTC Vive Pro.
 				"
-				imgurl="/images/skolplattform-vr.png"
+				imgurl="/images/home/skolplattform-vr.png"
 				readUrl="skolplattform"
 				tags={[
 					"Prototyp",
@@ -139,12 +127,13 @@ export default function Home() {
 			<Project
 				title="Weather Haiku"
 				description="
-				Utvecklade en väderbaserad haiku-generator med 
-				hjälp av Next.js, React, Framer Motion, Typescript, Tailwind CSS och Cohere AI. 
-				Webbappen hämtar önskad väderdata (ort) från OpenWeatherMap, bearbetar den med Cohere AI 
-				för att generera haikuer och presenterar resultaten i ett dynamiskt, animerat gränssnitt.
+				En väderbaserad haiku-generator utvecklades med hjälp av Next.js, React, Framer Motion, 
+				Typescript, Tailwind CSS och Cohere AI. Webbappen hämtar önskad väderdata (för angiven ort) 
+				från OpenWeatherMap, bearbetar informationen med Cohere AI för att sedan generera en haiku 
+				som presenteras i ett dynamiskt, animerat gränssnitt. 
+				Målet var att skapa en ny produkt som bygger på existerand produkter.
 				"
-				imgurl="/images/weatherhaiku-umea.png"
+				imgurl="/images/home/weatherhaiku-umea.png"
 				tags={[
 					"React",
 					"Next.js",
@@ -178,14 +167,13 @@ export default function Home() {
 			<Project
 				title="Recycle Cycle"
 				description="
-				Tillsammans med en grupp andra studenter skapades en prototyp av en mobil applikation 
+				Ett grupprojekt med studenter från kognitionsvetenskapsprogrammet. Vi skapade en prototyp av en mobil applikation 
 				designad för att förenkla och uppmuntra hållbara avfallshanteringspraxis. 
 				Genom att ta itu med vanliga hinder för återvinning, 
 				såsom bristande information, tillgänglighet och motivation, strävade vi efter att bidra 
-				till en mer cirkulär ekonomi. Appens fokus var att stödja hållbarhetsmål 12, 
-				hållbar konsumtion och produktion.
+				till en mer cirkulär ekonomi. Appens fokus var att stödja hållbarhetsmål 12 (hållbar konsumtion och produktion).
 				"
-				imgurl="/images/recyclecycle.png"
+				imgurl="/images/home/recyclecycle.png"
 				demoUrl="https://www.figma.com/proto/mj9ZznHvUni9NIAAmBHHfX/Recycle-Cycle-Designs?node-id=98-818&scaling=contain&content-scaling=fill-screen"
 				// readUrl="asd"
 				// githubUrl="a"
@@ -201,7 +189,7 @@ export default function Home() {
 				främja mentalt välbefinnande och skapa en känsla av upptäckarglädje. 
 				Minimalt användarvänligt gränssnitt som utnyttjar enhetens kamera och GPS-funktioner. 
 				"
-				imgurl="/images/stupidstroll.png"
+				imgurl="/images/home/stupidstroll.png"
 				tags={["Kotlin", "Java", "Sensors", "Google Maps SDK"]}
 				reversed={false}
 			/>
@@ -211,7 +199,7 @@ export default function Home() {
 				description="I nära samarbete med tre andra utvecklare byggde vi mobilspelet Cityloop från grunden. 
 				Mitt fokus låg på att skapa spelvärlden, designa användargränssnittet och producera ljud och musik. 
 				Tillsammans lyckades vi skapa ett roligt och engagerande spel där spelarna kämpade mot andra figtiva entreprenörer."
-				// imgurl="/images/cityloop.png"
+				// imgurl="/images/home/cityloop.png"
 				videourl="https://www.youtube.com/embed/8a6LKIefUjs?si=_wg3nX0vxdOuz-mn"
 				tags={["Unreal Engine", "UI", "Ljud", "Musik", "Spelvärld"]}
 				reversed={true}
